@@ -1,0 +1,17 @@
+var nav=document.getElementsByClassName("nav")[0];
+var item=document.getElementsByClassName("item")[0];
+var newnode=document.createElement("li");
+newnode.innerHTML="首页";
+nav.insertBefore(newnode,item);
+var newnode2=document.createElement("li");
+nav.appendChild(newnode2);
+var liText=document.createTextNode('关于');
+newnode2.appendChild(liText);
+var item2=document.getElementsByClassName("item")[2];
+var newnode3=document.createElement("li");
+nav.appendChild(newnode3);
+var liText2=document.createTextNode('文章');
+newnode3.appendChild(liText2);
+nav.replaceChild(newnode3,item2);
+var item1=document.getElementsByClassName("item")[1];
+nav.removeChild(item1);
